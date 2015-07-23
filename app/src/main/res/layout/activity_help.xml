@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myprey.ultimatetic.HELP"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HELP\n*There are 9 boards and first move can be made anywhere\n*In all the other moves you are to play in a board which corresponds to the position of the move made in the previous turn in the small board\n*If you are sent to a board which is already finished or won you can choose any board\n*Your objective is to complete a row or column or diagnal in the major board\n"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="left" />
+</RelativeLayout>
