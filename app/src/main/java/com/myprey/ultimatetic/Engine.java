@@ -55,7 +55,7 @@ public class Engine extends View {
             }
             cj = animex % 3;
             ci = animey % 3;
-            if (mov == move&&brd[ci][cj]==0) {
+            if (mov == move&&brd[ci][cj]==0&&state!=2) {
                 emptyspaces=0;
                 ci *= 3;
                 cj *= 3;
@@ -219,16 +219,12 @@ public class Engine extends View {
                         cont.startActivity(i);
                     }
                     if (x > width / 2 - backbound.width() / 2 && x < width / 2 + backbound.width() / 2 && y < height - backbound.height() / 2 && y > height - 3 * backbound.height() / 2) {
-                        /*player.start();
-                        Intent i = new Intent(cont, MainActivity.class);
-                        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        i.putExtra("BACK", true);
-                        cont.startActivity(i);*/
+                        move=1;
                         mbrd = new int[9][9];
                         brd = new int[9][9];
                         animex = 0;
                         animey = 0;
-                        move = 1;
+                        temp=0;
                     }
 
                     //TOUCHES
